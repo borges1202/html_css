@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia em html5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferenres ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px )" srcset="foto_p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="foto_m.png" type="image/png">
+        <img src="foto_g.png" alt="imagem flexivel">
+    </picture>
+    <h2>Reproduzir audio</h2>
+    <p>505 macacos do artico</p>
+    <!-- MP3 WAV OGG -->
+     <audio preload="metadata" controls>
+        <source src="../midia/505.mp3" type="audio/mpeg">      
+        <source src="../midia/505.ogg" type="audio/ogg">
+        <source src="../midia/505.wav" type="audio/wav">
+         <!-- não compensa utilizar o wav -->
+        <p>Infelizmente seu navegador não consegue Reproduzir audio, clique <a href="../midia/505.mp3">aqui para baixar o arquivo MP3</a></p>
+     </audio>
+</body>
+</html>

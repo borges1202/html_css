@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+    <style>
+
+        /*
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-elemento
+        > = children
+        
+        
+        */
+        a{
+            color:tomato;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: blue;
+        }
+
+        a:active{
+            color: black;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        .especial::before{
+            content: '⇒';
+        }
+
+        .especial::after{
+            content:'⇐';
+        }
+
+        .especial{
+            background-color: rgba(145, 228, 231, 0.529);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personaliznado links</h1>
+    <ul>
+        <li><a href="" target="_blank">Repositorio GIThub</a></li>
+        <li><a href="" target="_blank" class="especial">Canal do youtube</a></li>
+        <li><a href="" target="_blank">Site do curso em video</a></li>
+    </ul>
+</body>
+</html>

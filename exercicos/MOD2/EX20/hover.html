@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover</title>
+    <style>
+
+        div > .container{
+            display: none;
+        }
+
+        .p1:hover{
+            color: aqua;
+            display: block;
+        }
+        
+        .p1:hover > .container{
+            display:inline-block;
+        }
+
+        .container{
+            color: black;
+            display:inline-block;
+            background-color: gray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+
+        .container:hover{
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o Mouse no texto abaixo</p>
+    <div class="p1">
+        <p id="p">Passe o mouse aqui</p>
+        <div class="container">01</div>
+        <div class="container">02</div>
+        <div class="container">03</div>
+    </div>
+</body>
+</html>
